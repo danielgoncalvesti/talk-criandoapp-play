@@ -14,18 +14,61 @@
 
 .reveal h1,
 .reveal h2,
-h1, h2{
-        font-family: 'GothamRoundedBook';
-    font-size: 2em;
+.reveal p,
+h1, h2, p{
+    font-family: 'GothamRoundedBook';
+
     text-transform: none;
+}
+
+.reveal h1, h1 {
+    font-size: 1.7em;
+}
+.reveal h2, h2 {
+    font-size: 1.4em;
+}
+.reveal p, p{
+    font-size: 1em;
 }
 
 img.logo{
     max-width: 50%;
 }
 
-#profile{
-    max-width: 20%;
+.profile #picture{
+    max-width: 10%;
     border-radius: 60%;
-    border: solid 0.2em white;
+    border: solid 0.1em white;
+    margin: 0px 0px;
+}
+
+.profile p{
+    margin: 0px 0px;
+    font-size: 0.6em;
+}
+
+.profile {
+    margin: 0px 0;
+}
+
+#ufabc_logo{
+    max-width: 10%;
+    float: inherit;
+
+
+}
+
+.right{
+    float: right;
+    width: 50%;
+    border: 2px;
+}
+
+.left{
+    float: left;
+    width: 50%;
+}
+
+#ciclo_vida_req{
+    max-width: 65%;
 }
