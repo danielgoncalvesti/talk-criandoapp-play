@@ -54,89 +54,77 @@
             
                                     </div>
                 </section>
-
-
-                <section><h1>Stack (Core)</h1>
-                <img data-src="img/stack_play.png" style="width: 120%;"></section>
-                
                 <section>
-                    <section><h1>Instalação</h1>
-                    <ol>
-                        <li><p>Baixe o Activator na página do Play Framework, <a href="https://www.playframework.com/download#activator">aqui</a>.</p></li>
-                        
-                    <li><p>Depois configure as variáveis de ambiente, de acordo com o Sistema Operacional</p> </li> 
-                        </ol>
+                    <section data-background-color="#B7CECE">
+                        <h1 style="color: white;"> O que é o Play ?</h1>
+                        <img data-src="img/thinking_guy.png" style="width: 80%;">
+
+                    </section>
+                    <section data-background="black">
+                        <p>É um <i>framework</i> para desenvolvimento Web em<b>Scala</b>, e também em <b>Java</b>. Diferentemente de outros frameworks Java EE, ele não utiliza servlets.</p>
+                        <p>Outra ponto diferente é o uso de um servidor HTTP embutido, o Netty.</p>
+                    
+                    </section>
+                    
+                    <section data-background="yellow">
+                        <h1>Algumas vantagens:</h1>
                         <ul>
-                            <li><a href="#linux">Linux</a></li>
-                              <li><a href="#macosx">MacOSX</a></li>
-                              <li><a href="#windows">Windows</a></li>
-                    
+                        <li><b>Aumento considerável da produtividade:</b> Toda a mudança é compilada em tempo real. Então você altera algo no código, e assim que salvar poderá ver a atualização sem a necessidade de reiniciar a aplicação.</li>
                         </ul>
-                    </section>
-                    <section id="linux">
-                        <h2>Linux</h2>
-                        <ol>
-                        <li><p>Adicione no arquivo .bashrc ou .profile:</p></li>
-                        <pre>
-<code class="bash" data-trim data-noescape contenteditable>
-export PATH=/pasta/activator-x.x.x/bin:$PATH</code></pre>
-                            <li><p>Adicione a permissão de execução:</p></li>
-                                                <pre>
-<code class="bash" data-trim data-noescape contenteditable>
-chmod u+x /pasta/activator-x.x.x/bin/activator</code></pre>
-                            
-                            </ol>
-                    </section>
-                    <section id="macosx"><h2>Mac</h2>
-                    
-                    <ol>
-                        <li><p>Adicione no arquivo .bash_profile:</p></li>
-                        <pre>
-<code class="bash" data-trim data-noescape contenteditable>
-export PATH=/pasta/activator-x.x.x/bin:$PATH</code></pre>
 
-                            
-                            </ol>
-                    
-                    
-                    
                     </section>
-                    
+                    <section data-background="yellow">
+                        <h1>Algumas vantagens:</h1>
+                        <ul>
 
-                    <section id="windows"><h2>Windows</h2>
-                    
-                        <table>
-                            <tr>
-                                <td><small>1.</small></td>
-                                <td><small>2.</small></td>
-                                <td><small>3. Adicione o caminho <b>C:\pasta\activator-x.x.x\bin</b></small></td>
-                            </tr>
+                            <li><b>Manipulação de erros diferenciado:</b>O Play! tem um tratamento de erros fácil de correção no modo de desenvolvimento: tanto para erros de compilação como tempo de execução. É mostrado o caminho do arquivo, o número da linha e o código através do navegador. Não é mais necessário acessar arquivos de logs aleatórios (como por exemplo o do Tomcat).</li>
                         
-                            <tr>
-                            <td><img data-src="img/01prop_sistema.png" style="float:left;"></td>
-                           
-                   <td><img data-src="img/02var_amb.png" style=" float:left;"></td>
-                            <td><img data-src="img/03edit.png" style=" float:left;"></td>
-                                </tr>
-                        </table>
+                        </ul>                    
+                    
+   
                     </section>
+                    
+                    <section data-background="yellow">
+                        <h1>Algumas vantagens:</h1>
+                        <ul>
+
+                            <li><b>Suporte para tecnologias como: </b>REST, JSON/XML, ORM (mapeamento objeto-relacional), suporte NoSQL e muitos outros modelos compatíveis.</li>
+                        
+                        </ul>                    
+                    
+   
+                    </section>
+                    
+                    <section data-background="yellow">
+                        <h1>Algumas vantagens:</h1>
+                        <ul>
+
+                            <li><b>Bibliotecas para uso de programação concorrente (Akka)</b></li>
+                        
+                        </ul>                    
+                    
+   
+                    </section>                    
                 </section>
-                <section>
+
+                
+<section>
+    
+                         
+                    
+                    
                      <section data-background="orange">
                          <table><tr>
-                             
                              <td><img data-src="img/arquitetura_ti.png" style="width: 400%;"></td>
                              
                              <td style="vertical-align: middle;"><p class="title">Arquitetura do Play Framework</p></td>
                              </tr>
-                         
-                    
-                             
                              </table>
                     </section>
-                         
-                    
-                
+                    <section ><h1>Stack (Core)</h1>
+                <img data-src="img/stack_play.png" style="width: 120%;">
+                </section>
+                             
                  <section>
                      <h2>Arquitetura</h2>
                      <div>
@@ -171,6 +159,7 @@ export PATH=/pasta/activator-x.x.x/bin:$PATH</code></pre>
     └-app -------------> código fonte
     |  └-controllers --> controles de requisições
     |  └-views --------> arquivos de template para renderizar html
+    |  └-models -------> camada que representa os dados
     └-conf ------------> arquivos de configuração
     └-project ---------> definição de projeto sbt
     └-public ----------> pasta contendo recursos estáticos
@@ -182,6 +171,71 @@ export PATH=/pasta/activator-x.x.x/bin:$PATH</code></pre>
                         </section>
                 </section>
                 <section>
+                    
+                    <section><h1>Instalação</h1>
+                    <ol>
+                        <li><p>Baixe o Activator na página do Play Framework, <a href="https://www.playframework.com/download#activator">aqui</a>.</p></li>
+                        
+                    <li><p>Depois configure as variáveis de ambiente, de acordo com o Sistema Operacional</p> </li> 
+                        </ol>
+                        <ul>
+                            <li><a href="#linux">Linux</a></li>
+                              <li><a href="#macosx">MacOSX</a></li>
+                              <li><a href="#windows">Windows</a></li>
+                    
+                        </ul>
+                    </section>
+                    <section id="linux">
+                        <h2>Linux</h2>
+                        <ol>
+                        <li><p>Adicione no arquivo .bashrc ou .profile:</p></li>
+                        <pre>
+<code class="bash" data-trim data-noescape contenteditable>
+export PATH=/pasta/activator-x.x.x/bin:$PATH</code></pre>
+                            <li><p>Adicione a permissão de execução:</p></li>
+                                                <pre>
+<code class="bash" data-trim data-noescape contenteditable>
+chmod u+x /pasta/activator-x.x.x/bin/activator</code></pre>
+                            
+                            </ol>
+                    </section>
+                    <section id="macosx"><h2>Mac</h2>
+                    
+                    <ol>
+                        <li><p>Adicione no arquivo .bash_profile:</p></li>
+                        <pre>
+<code class="bash" data-trim data-noescape contenteditable>
+export PATH=/pasta/activator-x.x.x/bin:$PATH</code></pre>
+                            </ol>
+                    </section>
+                    
+
+                    <section id="windows"><h2>Windows</h2>
+                    
+                        <table>
+                            <tr>
+                                <td><small>1.</small></td>
+                                <td><small>2.</small></td>
+                                <td><small>3. Adicione o caminho <b>C:\pasta\activator-x.x.x\bin</b></small></td>
+                            </tr>
+                        
+                            <tr>
+                            <td><img data-src="img/01prop_sistema.png" style="float:left;"></td>
+                           
+                   <td><img data-src="img/02var_amb.png" style=" float:left;"></td>
+                            <td><img data-src="img/03edit.png" style=" float:left;"></td>
+                                </tr>
+                        </table>
+                    </section>
+                </section>
+ 
+                </section>
+                    
+                    
+                    
+                    
+                    
+                    <section>
                     <section data-background="#03ca03">
                         <table><tr>
                             <td style="vertical-align: middle; width: 50%; height:100%;">
@@ -223,18 +277,75 @@ export PATH=/pasta/activator-x.x.x/bin:$PATH</code></pre>
                     
                     <ul>
                      <li>IntelliJ Community</li>
-                        <li>Eclipse</li>
+                        <li><a href="#eclipse">Eclipse</a></li>
                      </ul>
-                    </section>      
+                    </section>
+            
+            
+            
+            
+                <section id="eclipse"><h1>Eclipse</h1>
+            <p><small>1. Para configurar o projeto Eclipse, precisamos primeiro adicionar um plugin. Abra o arquivo project/plugins.sbt e adicione após a última linha:</small></p>
+                <pre><code class="java" data-trim data-noescape contenteditable>            
+                    addSbtPlugin("com.typesafe.sbteclipse" % "sbteclipse-plugin" % "4.0.0")
+                    </code></pre><br />
+                    
+                    <p><small>2. Abra também o arquivo build.sbt que fica na raiz do projeto e adicione:</small></p>
+                    <pre><code class="java" data-trim data-noescape contenteditable>
+EclipseKeys.preTasks := Seq(compile in Compile)
+EclipseKeys.projectFlavor := EclipseProjectFlavor.Java
+EclipseKeys.createSrc := EclipseCreateSrc.ValueSet(EclipseCreateSrc.ManagedClasses, EclipseCreateSrc.ManagedResources)
+                    </code></pre>
                 </section>
 
-                <section>
-                <p class="title">Publicando o Projeto</p>
+</section>  
+                <section >
+                    <section data-background="#6aa4b8"><p class="title" style="color: white">Codando ...</p>
+                        <img data-src="img/coding.jpg" style="width: 60%;">
                 </section>
-                <section data-background="#6B4920">
-                <p class="title">Codando em Java</h1>
-                </section>
-                <section>
+                    
+                    <section>
+                        <h1>Hello World</h1><br />
+                        
+                        <p>controllers/HomeController.java </p>
+                        <pre><code class="java" data-trim data-noescape contenteditable>
+public Result helloWorld(){
+    return ok(views.html.hello.render("Hello World"));
+}</code></pre><br />
+                        
+<p>views/hello.scala.html</p>
+<pre><code class="scala" data-trim data-noescape contenteditable>@(mensagem: String)
+
+@main("Hello World Title"){
+
+@mensagem
+}
+</code></pre>
+                    </section>
+                    
+                    <section>
+                        <h1>Hello World</h1><br />
+                        
+                        <p>conf/routes</p>
+<pre><code data-trim data-noescape contenteditable> GET     /hello      controllers.HomeController.helloWorld() </code></pre>  <br />   
+                    <p>Passando parâmetros via URL:</p>
+                        <pre><code data-trim data-noescape contenteditable>GET  /hello  controllers.HomeController.hello(parametro ?= "")</code></pre> 
+                        <p>ou também:</p>
+                    <pre><code data-trim data-noescape contenteditable>GET  /hello  controllers.HomeController.hello(parametro: String)</code></pre> 
+                        
+                    </section>
+                    
+                    <section><h1>Projeto Agenda</h1>
+                        <br />
+                        <img data-src="img/playagenda.png" style="width: 30%;">
+
+                        <p><small>Repositório: <a href="https://github.com/danielgoncalvesti/phonebook-play-java-nodatabase">https://github.com/danielgoncalvesti/phonebook-play-java-nodatabase</a></small></p>
+                        <p><small>Link: <a href="playagenda.herokuapp.com">playagenda.herokuapp.com</a></small></p>
+                        
+                    </section>
+                    
+                    
+                    
                    <section> <h2> Classe Contato</h2>
                 <pre><code class="java" data-trim data-noescape contenteditable>
 package models;
@@ -308,13 +419,32 @@ public class ContatoDao {
                     
                 </section>
                 </section>
-                <section><h1>Criando Serviços</h1></section>
+                
+                </section>
+                
+                
+                
+                
+
+                <section><h1>Criando Serviços</h1>
+<pre><code class="java" data-trim data-noescape contenteditable>
+public Result apiAll(String filter){
+    List<Contato> contatos = models.ContatoHelper.findAll();
+    return ok(Json.toJson(contatos));
+}</code></pre>
+                </section>
+                </section>
+                
                 <section><h1>Links</h1></section>
     <!--
                 <section data-background="http://i.giphy.com/90F8aUepslB84.gif" data-background-transition="zoom">
 
                 </section>
     -->
+    
+                    <section>
+                <p class="title">Publicando o Projeto</p>
+                </section>
     <section><h2>Configuração de Tema</h2>
                     <p>
                         
