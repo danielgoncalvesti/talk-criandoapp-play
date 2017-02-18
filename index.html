@@ -334,6 +334,26 @@ public Result helloWorld(){
                     <pre><code data-trim data-noescape contenteditable>GET  /hello  controllers.HomeController.hello(parametro: String)</code></pre> 
                         
                     </section>
+                    <section>
+                        
+                       
+                        
+                        <p>Limpar projeto:</p>
+                        <pre><code>clean</code></pre>
+                        <p>Compilar:</p>
+                        <pre><code>compile</code></pre>
+                        <p>Criar versão para produção:</p>
+                        <pre><code>dist</code></pre>
+                    </section>
+                    <section>
+                         <h1>Console</h1>
+                        <p>Compilação automática:</p>
+                        <pre><code>~run</code></pre>
+                        <p>Acessar banco de dados h2 database:</p>
+                        <pre><code>h2-browser</code></pre>
+                        <p>Versão para debug:</p>
+                        <pre><code>activator -jvm-debug 9999</code></pre>
+                    </section>
                     
                     <section><h1>Projeto Agenda</h1>
                         <br />
@@ -421,10 +441,6 @@ public class ContatoDao {
                 </section>
                 
                 </section>
-                
-                
-                
-                
 
                 <section><h1>Criando Serviços</h1>
 <pre><code class="java" data-trim data-noescape contenteditable>
@@ -434,17 +450,31 @@ public Result apiAll(String filter){
 }</code></pre>
                 </section>
                 </section>
+                                    <section>
+                <h2>Publicando o Projeto no Heroku</h2>
+                <p>Criar arquivo Procfile, com conteúdo:</p>
+                <pre><code>web: target/universal/stage/bin/play_agenda -Dhttp.port=$PORT -Dplay.version=2.5.9</code></pre>
+                <p><small><a href="https://www.playframework.com/documentation/2.5.x/ProductionHeroku">Documentação para o Heroku</a></small></p>
+                </section>
                 
-                <section><h1>Links</h1></section>
+                <section><h1>Links</h1>
+                
+                <ol>
+                <li><a href="http://blog.sabercompartilhar.com.br/conheca-o-play-framework-rapido-e-agil/">Conheça o Play Framework: Rápido e Ágil no Desenvolvimento Web</a></li>
+                <li><a href="http://blog.sabercompartilhar.com.br/primeiros-passos-com-o-play-framework-hello-world/">Criando um HelloWorld com Play Framework</a>
+                </li>
+                <li><a href="https://github.com/danielgoncalvesti/phonebook-play-java-nodatabase">Repositório Phonebook</a></li>
+                <li><a href="https://www.youtube.com/watch?v=gpaIwB18XL0">YouTube - Criando um Hello World</a></li>
+                </ol>
+                
+                </section>
     <!--
                 <section data-background="http://i.giphy.com/90F8aUepslB84.gif" data-background-transition="zoom">
 
                 </section>
     -->
     
-                    <section>
-                <p class="title">Publicando o Projeto</p>
-                </section>
+
     <section><h2>Configuração de Tema</h2>
                     <p>
                         
