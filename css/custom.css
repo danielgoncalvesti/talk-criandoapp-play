@@ -36,7 +36,7 @@ img.logo{
 }
 
 .profile #picture{
-    max-width: 10%;
+    max-width: 20%;
     border-radius: 60%;
     border: solid 0.1em white;
     margin: 0px 0px;
@@ -44,13 +44,20 @@ img.logo{
 
 .profile p{
     margin: 0px 0px;
-    font-size: 0.6em;
+    font-size: 1em;
+    font-weight: 900;
 }
 
 .profile {
     margin: 0px 0;
 }
 
+.profile #descricao p {
+    font-family: GothamRoundedBook;
+    font-size: 0.6em;
+    font-weight: 100;
+    letter-spacing: -1px;
+}
 #ufabc_logo{
     max-width: 10%;
     float: inherit;
@@ -71,4 +78,35 @@ img.logo{
 
 #ciclo_vida_req{
     max-width: 65%;
+}
+
+
+.reveal.slide .slides > section, .reveal.slide .slides > section > section {
+  min-height: 100% !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  position: absolute !important;
+  top: 0 !important;
+  align-items: center !important;
+}
+section > h1, section > h2 {
+  position: absolute !important;
+  top: 0 !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  left: 0 !important;
+  right: 0 !important;
+  text-align: center !important;
+}
+.print-pdf .reveal.slide .slides > section, .print-pdf .reveal.slide .slides > section > section {
+  min-height: 770px !important;
+  position: relative !important;
+}
+
+
+p.title{
+    font-size: 1.7em;
+    text-align: center;
+    font-weight: 900;
 }

@@ -29,28 +29,14 @@
         <div class="reveal">
             <div class="slides">
 
-                                <section><h2>Configuração de Tema</h2>
-                    <p>
-                        
-                        <!-- Hacks to swap themes after the page has loaded. Not flexible and only intended for the reveal.js demo deck. -->
-                        <a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/black.css'); return false;">Black (default)</a> -
-                        <a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/white.css'); return false;">White</a> -
-                        <a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/league.css'); return false;">League</a> -
-                        <a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/sky.css'); return false;">Sky</a> -
-                        <a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/beige.css'); return false;">Beige</a> -
-                        <a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/simple.css'); return false;">Simple</a> <br>
-                        <a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/serif.css'); return false;">Serif</a> -
-                        <a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/blood.css'); return false;">Blood</a> -
-                        <a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/night.css'); return false;">Night</a> -
-                        <a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/moon.css'); return false;">Moon</a> -
-                        <a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/solarized.css'); return false;">Solarized</a>
-                    </p>
-                </section>
-                <section data-background-transition="zoom">
-                    <img class="logo" data-src="img/play_logo_text.png">
-                    <h1 id="titleapp">Criando Aplicações Web com o Play Frameworkk</h1>
+                                
+                <section data-background-transition="zoom" data-background="#bb9f59">
+                    <img class="logo" data-src="img/app-construindo.png">
+                    <h1 id="titleapp" style="color:white">Criando Aplicações Web</h1>
                     <br />
-                    <h3>Desenvolvimento Web ABC - Meetup</h3>
+                    <p style="color:white">com o Play Framework</p>
+<img data-src="img/play_icon.png" style="width: 5%;">
+                    
                 </section>
                 
                 <section data-background-image="http://scarbroughstudios.com/img/codepen.svg">
@@ -58,30 +44,98 @@
                 <div class="profile">
                 <img id="picture" data-src="img/profile_author.jpg">
                 <p>Daniel Gonçalves</p>
-                    <p><small>Desenvolvedor Java Web</small></p>
-                </div>
-                <div>
-                <img id="ufabc_logo" data-src="img/ufabc_logo.png">    
-                </div> 
+                    <p><small>Desenvolvedor Java Web</small></p><br />
+                
+                        <ul id="descricao">
+                        <li><p>Atualmente trabalha na Universidade Federal do ABC, como Analista de TI.</p></li>
+                            <li><p>Iniciando mestrado em Ciência da Computação.</p></li>
+                        </ul>
+                    </div>
+            
                                     </div>
                 </section>
 
-                <section>
 
-                    <h1>Spring MVC vs Play</h1>
-
-                </section>
                 <section><h1>Stack (Core)</h1>
-                <img data-src="img/stack_play.png"></section>
+                <img data-src="img/stack_play.png" style="width: 120%;"></section>
                 
                 <section>
-                    <section><h1>Instalação</h1></section>
-                    <section><h2>Linux</h2></section>
-                    <section><h2>Mac</h2></section>
-                    <section><h2>Windows</h2></section>
+                    <section><h1>Instalação</h1>
+                    <ol>
+                        <li><p>Baixe o Activator na página do Play Framework, <a href="https://www.playframework.com/download#activator">aqui</a>.</p></li>
+                        
+                    <li><p>Depois configure as variáveis de ambiente, de acordo com o Sistema Operacional</p> </li> 
+                        </ol>
+                        <ul>
+                            <li><a href="#linux">Linux</a></li>
+                              <li><a href="#macosx">MacOSX</a></li>
+                              <li><a href="#windows">Windows</a></li>
+                    
+                        </ul>
+                    </section>
+                    <section id="linux">
+                        <h2>Linux</h2>
+                        <ol>
+                        <li><p>Adicione no arquivo .bashrc ou .profile:</p></li>
+                        <pre>
+<code class="bash" data-trim data-noescape contenteditable>
+export PATH=/pasta/activator-x.x.x/bin:$PATH</code></pre>
+                            <li><p>Adicione a permissão de execução:</p></li>
+                                                <pre>
+<code class="bash" data-trim data-noescape contenteditable>
+chmod u+x /pasta/activator-x.x.x/bin/activator</code></pre>
+                            
+                            </ol>
+                    </section>
+                    <section id="macosx"><h2>Mac</h2>
+                    
+                    <ol>
+                        <li><p>Adicione no arquivo .bash_profile:</p></li>
+                        <pre>
+<code class="bash" data-trim data-noescape contenteditable>
+export PATH=/pasta/activator-x.x.x/bin:$PATH</code></pre>
+
+                            
+                            </ol>
+                    
+                    
+                    
+                    </section>
+                    
+
+                    <section id="windows"><h2>Windows</h2>
+                    
+                        <table>
+                            <tr>
+                                <td><small>1.</small></td>
+                                <td><small>2.</small></td>
+                                <td><small>3. Adicione o caminho <b>C:\pasta\activator-x.x.x\bin</b></small></td>
+                            </tr>
+                        
+                            <tr>
+                            <td><img data-src="img/01prop_sistema.png" style="float:left;"></td>
+                           
+                   <td><img data-src="img/02var_amb.png" style=" float:left;"></td>
+                            <td><img data-src="img/03edit.png" style=" float:left;"></td>
+                                </tr>
+                        </table>
+                    </section>
                 </section>
                 <section>
-                     <section><h1>Arquitetura do Play Framework</h1></section>
+                     <section data-background="orange">
+                         <table><tr>
+                             
+                             <td><img data-src="img/arquitetura_ti.png" style="width: 400%;"></td>
+                             
+                             <td style="vertical-align: middle;"><p class="title">Arquitetura do Play Framework</p></td>
+                             </tr>
+                         
+                    
+                             
+                             </table>
+                    </section>
+                         
+                    
                 
                  <section>
                      <h2>Arquitetura</h2>
@@ -90,7 +144,7 @@
                     <ul>
                      <li>MVC</li>
                         <li>Netty - Servidor Web integrado sem uso de servlets</li>
-                        <li>Construido em Scala</li>
+                        <li>Construido na linguagem Scala</li>
                      </ul>
                      </div>
                      <div class="right">
@@ -100,7 +154,17 @@
                     </section>
                     
                     <section><h2>Ciclo de Vida da Requisição</h2>
-                    <img data-src="img/ciclo_vida_req.png" id="ciclo_vida_req">
+                        <img data-src="img/ciclo_vida_req.png" id="ciclo_vida_req">
+                        
+                    </section>
+                    <section><h2>Ciclo de Vida da Requisição</h2>
+                    <img data-src="img/ciclo_vida_req01.png" id="ciclo_vida_req01">
+                    </section>
+                    <section><h2>Ciclo de Vida da Requisição</h2>
+                    <img data-src="img/ciclo_vida_req02.png" id="ciclo_vida_req02">
+                    </section>
+                    <section><h2>Ciclo de Vida da Requisição</h2>
+                    <img data-src="img/ciclo_vida_req03.png" id="ciclo_vida_req03">
                     </section>
                      <section> <h2>Estrutura de Projeto</h2>
                     <pre><code>       
@@ -117,50 +181,61 @@
                         </code></pre>
                         </section>
                 </section>
-               
-
-
                 <section>
+                    <section data-background="#03ca03">
+                        <table><tr>
+                            <td style="vertical-align: middle; width: 50%; height:100%;">
+                        <img data-src="img/coding.svg" style="width: 100%"></td>
+                    <td><p class="title">Criando um novo projeto</p></td>
+                            </tr>
+
+                            </table>
+                    </section>
+                    
                     <section>
-                    <h1>Criando um novo projeto</h1>
-                    <p>Criar novo projeto:</p>
+                        <div>
+                            <ol>  
+                            <li><p>Criar novo projeto:</p></li>
                     <pre><code  class="bash" data-trim data-noescape contenteditable>
                     activator new [nome-do-projeto]
                     </code></pre> 
-                    <p>Entrar na pasta do projeto:</p>
+                                <li><p>Entrar na pasta do projeto:</p></li>
                     <pre><code  class="bash" data-trim data-noescape contenteditable>
                     cd nome-do-projeto
                     </code></pre>                    
-                    <p>Subir o projeto no terminal:</p>
+                                <li><p>Subir o projeto no terminal:</p></li>
                     <pre><code  class="bash" data-trim data-noescape contenteditable>
                     nome-do-projeto$ activator
                     </code></pre>
-                    <p>Com build automático:</p>
+                                <li><p>Com build automático:</p></li>
                     <pre><code  class="bash" data-trim data-noescape contenteditable>
                     [nome-do-projeto] ~run
                     </code></pre>
+                                <li><p>Alterando a porta:</p></li>
                     <pre><code  class="bash" data-trim data-noescape contenteditable>
                     [nome-do-projeto] ~run -Dhttp.port=8080
-                    </code></pre>    
+                    </code></pre> 
+                                </ol>
+                            </div>
                 </section>
                 
-                              <section><h1>Importando para IDE</h1></section>      
+                 <section><h1>Importando para IDE</h1>
+                    
+                    <ul>
+                     <li>IntelliJ Community</li>
+                        <li>Eclipse</li>
+                     </ul>
+                    </section>      
                 </section>
-                <section>
-                    <section><h1>Criando um projeto</h1></section>
 
-                </section>
                 <section>
-                <h1>Persistindo Dados</h1>
-                </section>
-                <section>
-                <h1>Publicando o Projeto</h1>
+                <p class="title">Publicando o Projeto</p>
                 </section>
                 <section data-background="#6B4920">
-                <h1>Codando em Java</h1>
+                <p class="title">Codando em Java</h1>
                 </section>
                 <section>
-                    <h2> Classe Contato</h2>
+                   <section> <h2> Classe Contato</h2>
                 <pre><code class="java" data-trim data-noescape contenteditable>
 package models;
 
@@ -174,6 +249,64 @@ public class Contato{
     public String telefone;
 }
         </code></pre>
+                       </section>
+                    
+                    <section><h2>Classe ContatoDao</h2>
+                        
+<pre><code class="java" data-trim data-noescape contenteditable>           
+package models;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.atomic.AtomicLong;
+
+public class ContatoDao {
+
+    private static Map<Long, Contato> contatos = new ConcurrentHashMap<Long, Contato>();
+
+    private static AtomicLong uuid = new AtomicLong();
+
+    public static Contato findById(long id) {
+        return contatos.get(id);
+    }
+
+    public static List<Contato> findByName(String filter){
+        List<Contato> result = new ArrayList<Contato>();
+        for (Contato contato: contatos.values()){
+            if (contato.nome.toLowerCase().toLowerCase().contains(filter.toLowerCase())){
+                result.add(contato);
+            }
+        }
+        return result;
+    }
+
+    public static List<Contato> findAll(){
+        List<Contato> result = new ArrayList<Contato>();
+        for (Contato contato: contatos.values()){
+            result.add(contato);
+
+        }
+        return result;
+        //return new ArrayList<Contato>(contatos.values());
+    }
+    public static void save(Contato contato) {
+        if (contato.id == null) {
+            contato.id = uuid.incrementAndGet();
+        }
+        contatos.put(contato.id, contato);
+    }
+
+    public static void delete(long id) {
+        contatos.remove(id);
+    }
+
+}
+</code></pre>
+                        
+                    
+                </section>
                 </section>
                 <section><h1>Criando Serviços</h1></section>
                 <section><h1>Links</h1></section>
@@ -182,6 +315,23 @@ public class Contato{
 
                 </section>
     -->
+    <section><h2>Configuração de Tema</h2>
+                    <p>
+                        
+                        <!-- Hacks to swap themes after the page has loaded. Not flexible and only intended for the reveal.js demo deck. -->
+                        <a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/black.css'); return false;">Black (default)</a> -
+                        <a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/white.css'); return false;">White</a> -
+                        <a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/league.css'); return false;">League</a> -
+                        <a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/sky.css'); return false;">Sky</a> -
+                        <a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/beige.css'); return false;">Beige</a> -
+                        <a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/simple.css'); return false;">Simple</a> <br>
+                        <a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/serif.css'); return false;">Serif</a> -
+                        <a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/blood.css'); return false;">Blood</a> -
+                        <a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/night.css'); return false;">Night</a> -
+                        <a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/moon.css'); return false;">Moon</a> -
+                        <a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/solarized.css'); return false;">Solarized</a>
+                    </p>
+                </section>
             </div>
         </div>
 
@@ -192,6 +342,7 @@ public class Contato{
             // More info https://github.com/hakimel/reveal.js#configuration
             Reveal.initialize({
                 history: true,
+                center: false,
 
                 // More info https://github.com/hakimel/reveal.js#dependencies
                 dependencies: [
@@ -201,6 +352,8 @@ public class Contato{
                     { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
                 ]
             });
+            
+           
         </script>
         </body>
         </html>
